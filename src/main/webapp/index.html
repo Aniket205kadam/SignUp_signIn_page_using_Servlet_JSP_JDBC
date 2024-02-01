@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration App</title>
+<style>
+    body {
+        background-color: rgb(33, 33, 32);
+        color: whitesmoke;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+    a {
+        color: rgb(76, 76, 248);
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .input {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input {
+        padding: 8px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .signup input {
+        background-color:#328f06;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+	<form method = "post" action="./Register">
+		<h1>SING UP</h1><br><br>
+        <div class="input">
+        <label for="userName">User Name*</label><br>
+        <input type="text" name="userName" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email*</label><br>
+        <input type="email" placeholder="Enter your email" name = "email" required><br><br>
+
+        <label for="password">Password*</label><br>
+        <input type="password" name="password" placeholder="Enter a password" required><br><br>
+
+        <label for="userCity">User City*</label><br>
+        <input type="text" placeholder="Enter your city" required><br><br>
+        </div>
+        <div class="signup">
+        <input type="submit" value="Sign Up"><br><br>
+        </div>
+
+        <a href="login.html">Already have a account</a>
+	</form>
+</body>
+</html>
